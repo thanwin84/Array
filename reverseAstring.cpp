@@ -1,3 +1,4 @@
+//using two pointer approach
 string reverseWord(string str){
 
     //Your code here
