@@ -1,4 +1,4 @@
-lass Solution:
+class Solution:
     def minJumps(self, arr, n):
         # if arr size is 1, we need 0 jumps
         if len(arr) == 1:
