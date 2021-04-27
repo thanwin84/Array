@@ -1,4 +1,4 @@
-//time: O(nlogn)
+#time: O(nlogn) and space: O(n+m) m is the lenght of all possible heaights 
 class Pair:
     def __init__(self, value, index):
         self.value = value
