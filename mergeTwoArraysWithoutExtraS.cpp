@@ -1,5 +1,6 @@
 //nlogn
 // using shell sort intuition
+//https://youtu.be/hVl2b3bLzBw
 class Solution{
 public:
     int nextGap(int n){
