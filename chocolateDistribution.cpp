@@ -1,4 +1,4 @@
-//time: O(n) and space: O(1)
+//time: O(nlogn) and space: O(1)
 class Solution{
     public:
     long long findMinDiff(vector<long long> a, long long n, long long m) {
