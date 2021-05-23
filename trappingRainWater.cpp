@@ -35,3 +35,35 @@ public:
     }
    
 };
+//time: O(n) single pass and space: O(1)
+class Solution {
+
+    // Function to find the trapped water between the blocks.
+public:
+    int trappingWater(int arr[], int n) {
+        // Code here
+        int maxL = arr[0];
+        int maxR = arr[n - 1];
+        int left = 1;
+        int right = n - 2;
+        int trappingWater = 0;
+        while (left <= right) {
+            if (maxL <= maxR) {
+                if (arr[left] >= maxL) maxL = arr[left];
+                else {
+                    trappingWater += (maxL - arr[left]);
+                }
+                left++;
+            }
+            else {
+                if (arr[right] >= maxR) maxR = arr[right];
+                else {
+                    trappingWater += (maxR - arr[right]);
+                }
+                right--;
+            }
+        }
+        return trappingWater;
+    }
+};
+
